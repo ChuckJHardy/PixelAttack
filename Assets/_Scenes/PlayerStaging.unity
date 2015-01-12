@@ -214,6 +214,7 @@ GameObject:
   - 95: {fileID: 1078273458}
   - 50: {fileID: 1078273462}
   - 61: {fileID: 1078273461}
+  - 114: {fileID: 1078273463}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -300,6 +301,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!114 &1078273463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1078273457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e671c37a699a2409ba34db36606b2233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  maxVelocity: {x: 3, y: 5}
 --- !u!1 &1533656542
 GameObject:
   m_ObjectHideFlags: 0
