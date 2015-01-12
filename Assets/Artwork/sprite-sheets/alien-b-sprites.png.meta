@@ -1,7 +1,41 @@
 fileFormatVersion: 2
 guid: 482341569de914abd84e44059f1071f6
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: alien-b-sprites_0
+    21300002: alien-b-sprites_1
+    21300004: alien-b-sprites_2
+    21300006: alien-b-sprites_3
+    21300008: alien-b-sprites_4
+    21300010: alien-b-sprites_5
+    21300012: alien-b-sprites_6
+    21300014: alien-b-sprites_7
+    21300016: alien-b-sprites_8
+    21300018: alien-b-sprites_9
+    21300020: alien-b-sprites_10
+    21300022: alien-b-sprites_11
+    21300024: alien-b-sprites_12
+    21300026: alien-b-sprites_13
+    21300028: alien-b-sprites_14
+    21300030: alien-b-sprites_15
+    21300032: alien-b-sprites_16
+    21300034: alien-b-sprites_17
+    21300036: alien-b-sprites_18
+    21300038: alien-b-sprites_19
+    21300040: alien-b-sprites_20
+    21300042: alien-b-sprites_21
+    21300044: alien-b-sprites_22
+    21300046: alien-b-sprites_23
+    21300048: alien-b-sprites_24
+    21300050: alien-b-sprites_25
+    21300052: alien-b-sprites_26
+    21300054: alien-b-sprites_27
+    21300056: alien-b-sprites_28
+    21300058: alien-b-sprites_29
+    21300060: alien-b-sprites_30
+    21300062: alien-b-sprites_31
+    21300064: alien-b-sprites_32
+    21300066: alien-b-sprites_33
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +59,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +76,346 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: alien-b-sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 352
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_19
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_21
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 192
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_31
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alien-b-sprites_33
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 32
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
