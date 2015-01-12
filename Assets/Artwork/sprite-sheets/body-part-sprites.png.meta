@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: e40f908555b074a578d2f187120ae784
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: body-part-sprites_0
+    21300002: body-part-sprites_1
+    21300004: body-part-sprites_2
+    21300006: body-part-sprites_3
+    21300008: body-part-sprites_4
+    21300010: body-part-sprites_5
+    21300012: body-part-sprites_6
+    21300014: body-part-sprites_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +33,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +50,86 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: body-part-sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body-part-sprites_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body-part-sprites_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body-part-sprites_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body-part-sprites_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body-part-sprites_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body-part-sprites_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body-part-sprites_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 29
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
