@@ -31,7 +31,22 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 77ff0a7fff7cc4a66ba55c407a3ab0f7, type: 2}
   m_ParentStateMachine: {fileID: 110746540}
-  m_Position: {x: 50, y: 50, z: 0}
+  m_Position: {x: 24, y: 132, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110298304
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PlayerIdleAnimation
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: e8901ce5c942b4083adb30c560c5acfb, type: 2}
+  m_ParentStateMachine: {fileID: 110746540}
+  m_Position: {x: 24, y: 72, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -42,9 +57,10 @@ StateMachine:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110246540}
+  m_DefaultState: {fileID: 110298304}
   m_States:
   - {fileID: 110246540}
+  - {fileID: 110298304}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions: {}
