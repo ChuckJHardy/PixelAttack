@@ -35,6 +35,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110263744
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PlayerWaitAnimation
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 367446e1c5ad24b088a9585b05d0ccb3, type: 2}
+  m_ParentStateMachine: {fileID: 110746540}
+  m_Position: {x: 59, y: 137, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110298304
 State:
   m_ObjectHideFlags: 3
@@ -61,6 +76,7 @@ StateMachine:
   m_States:
   - {fileID: 110246540}
   - {fileID: 110298304}
+  - {fileID: 110263744}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions: {}
