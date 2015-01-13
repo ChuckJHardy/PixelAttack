@@ -3,9 +3,11 @@ using System.Collections;
 
 public class Switch : MonoBehaviour {
 
+	public bool sticky;
 	public DoorTrigger[] doorTriggers;
 
 	Animator animator;
+	bool switchActive;
 
 	void Awake () {
 		animator = GetComponent<Animator> ();
@@ -14,12 +16,18 @@ public class Switch : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		animator.SetInteger ("AnimationState", 1);
 
+		switchActive = true;
+
 		foreach (DoorTrigger doorTrigger in doorTriggers) {
 			doorTrigger.door.Open();
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D other) {
+		if (sticky && switchActive) return;
+
+		switchActive = false;
+
 		animator.SetInteger ("AnimationState", 2);
 
 		foreach (DoorTrigger doorTrigger in doorTriggers) {
