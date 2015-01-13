@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9577984}
   - 50: {fileID: 5077984}
   - 58: {fileID: 5877984}
+  - 114: {fileID: 11485864}
   m_Layer: 0
   m_Name: AlienA
   m_TagString: Untagged
@@ -72,6 +73,18 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11485864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa01a641c57f146309510b612ef714a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: .5
 --- !u!212 &21277984
 SpriteRenderer:
   m_ObjectHideFlags: 1
