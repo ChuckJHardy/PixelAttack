@@ -113,6 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97968aa4bf9e4da888b4b2fc21fcd24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyPart: {fileID: 11480158, guid: 1254f87ae1ed843059255547bdb9b6f4, type: 2}
+  totalBodyParts: 5
 --- !u!212 &21287452
 SpriteRenderer:
   m_ObjectHideFlags: 1
