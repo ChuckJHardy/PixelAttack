@@ -11,9 +11,9 @@ GameObject:
   - 212: {fileID: 21287452}
   - 95: {fileID: 9587452}
   - 50: {fileID: 5040182}
-  - 61: {fileID: 6140182}
   - 114: {fileID: 11476258}
   - 114: {fileID: 11476256}
+  - 58: {fileID: 5825610}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -48,8 +48,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6140182
-BoxCollider2D:
+--- !u!58 &5825610
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -57,8 +57,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 852f704dc138146b1a7ee651ef54983d, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: .800000012, y: .800000012}
-  m_Center: {x: 0, y: 0}
+  m_Radius: .300000012
+  m_Center: {x: 0, y: -.0900000036}
 --- !u!95 &9587452
 Animator:
   serializedVersion: 3
