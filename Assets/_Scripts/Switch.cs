@@ -34,4 +34,12 @@ public class Switch : MonoBehaviour {
 			doorTrigger.door.Close();
 		}
 	}
+
+	void OnDrawGizmos () {
+		Gizmos.color = sticky ? Color.red : Color.green;
+
+		foreach (DoorTrigger doorTrigger in doorTriggers) {
+			Gizmos.DrawLine(transform.position, doorTrigger.door.transform.position);
+		}
+	}
 }
