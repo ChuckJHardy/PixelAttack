@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.00900006, y: .0790000036, z: 0}
+  m_LocalPosition: {x: 3.2105546, y: .0774123669, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,7 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43f05d955aa740d19de5c92b9c05b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  doorTriggers:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &21214922
 SpriteRenderer:
   m_ObjectHideFlags: 1

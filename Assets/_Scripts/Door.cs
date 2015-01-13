@@ -26,7 +26,7 @@ public class Door : MonoBehaviour {
 	}
 
 	public void CloseWithDelay() {
-		Invoke("DelayedClose", doorDelay);
+		Invoke("Close", doorDelay);
 	}
 
 	void EnableCollider2D () {
