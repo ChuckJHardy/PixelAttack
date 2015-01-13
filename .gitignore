@@ -18,3 +18,7 @@
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+# Sublime Text 3
+*.sublime-project
+*.sublime-workspace
