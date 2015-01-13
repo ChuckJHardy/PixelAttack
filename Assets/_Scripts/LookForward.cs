@@ -4,7 +4,7 @@ using System.Collections;
 public class LookForward : MonoBehaviour {
 	public Transform sightStart, sightEnd;
 
-	private bool collision = false;
+	bool collision = false;
 
 	void Update () {
 		collision = Physics2D.Linecast (sightStart.position, sightEnd.position, 1 << LayerMask.NameToLayer ("Solid"));

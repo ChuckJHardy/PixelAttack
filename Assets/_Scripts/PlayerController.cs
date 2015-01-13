@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-
 	public Vector2 moving = new Vector2 ();
 
 	void Update () {

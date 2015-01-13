@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class Switch : MonoBehaviour {
-
 	public bool sticky;
 	public DoorTrigger[] doorTriggers;
 

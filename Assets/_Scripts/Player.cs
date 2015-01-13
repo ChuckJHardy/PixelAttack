@@ -7,9 +7,9 @@ public class Player : MonoBehaviour {
 	public Vector2 maxVelocity = new Vector2 (3, 5);
 	public float airSpeedMultiplier = 0.3f;
 
-	private Animator animator;
-	private PlayerController controller;
-	private bool standing;
+	Animator animator;
+	PlayerController controller;
+	bool standing;
 
 	void Start () {
 		controller = GetComponent<PlayerController> ();

@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class BodyPart : MonoBehaviour {
+	SpriteRenderer spriteRenderer;
+	Color start;
+	Color end;
 	
-	private SpriteRenderer spriteRenderer;
-	private Color start;
-	private Color end;
-	private float time = 0.0f;
+	float time = 0.0f;
 	
 	void Start () {
 		spriteRenderer = GetComponent<SpriteRenderer> ();

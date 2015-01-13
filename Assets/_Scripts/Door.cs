@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class Door : MonoBehaviour {
-
 	public const int IDLE = 0;
 	public const int OPENING = 1;
 	public const int OPEN = 2;
@@ -10,8 +9,8 @@ public class Door : MonoBehaviour {
 
 	public float doorDelay = 0.5f;
 
-	private Animator animator;
-	private int state = IDLE;
+	Animator animator;
+	int state = IDLE;
 
 	void Awake () {
 		animator = GetComponent<Animator> ();	

@@ -2,12 +2,11 @@
 using System.Collections;
 
 public class RandomSprite : MonoBehaviour {
-
 	public Sprite[] sprites;
 	public string resourceName;
 	public int currentSpriteIndex = -1;
 
-	private SpriteRenderer spriteRenderer;
+	SpriteRenderer spriteRenderer;
 
 	void Awake () {
 		sprites = Resources.LoadAll<Sprite> (resourceName);	

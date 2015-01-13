@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class DoorTrigger : MonoBehaviour {
-
 	public Door door;
 	public bool ignoreTrigger;
 
