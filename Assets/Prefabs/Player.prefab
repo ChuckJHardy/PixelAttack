@@ -12,6 +12,8 @@ GameObject:
   - 95: {fileID: 9587452}
   - 50: {fileID: 5040182}
   - 61: {fileID: 6140182}
+  - 114: {fileID: 11476258}
+  - 114: {fileID: 11476256}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -72,6 +74,33 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11476256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9336c3277188d44d59b87706b2cca65b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moving: {x: 0, y: 0}
+--- !u!114 &11476258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e671c37a699a2409ba34db36606b2233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jetSpeed: 15
+  maxVelocity: {x: 3, y: 5}
+  airSpeedMultiplier: .300000012
 --- !u!212 &21287452
 SpriteRenderer:
   m_ObjectHideFlags: 1

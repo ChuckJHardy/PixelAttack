@@ -7,11 +7,13 @@ public class Player : MonoBehaviour {
 	public Vector2 maxVelocity = new Vector2 (3, 5);
 	public float airSpeedMultiplier = 0.3f;
 
+	private Animator animator;
 	private PlayerController controller;
 	private bool standing;
 
 	void Start () {
 		controller = GetComponent<PlayerController> ();
+		animator = GetComponent<Animator> ();
 	}
 
 	void Update () {
@@ -33,6 +35,10 @@ public class Player : MonoBehaviour {
 
 	 			transform.localScale = new Vector3 (forceX > 0 ? 1 : -1, 1, 1);
 			}
+
+			animator.SetInteger ("AnimationState", 1);
+		} else {
+			animator.SetInteger ("AnimationState", 0);
 		}
 
 		if (controller.moving.y > 0) {
