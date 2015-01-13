@@ -21,7 +21,7 @@ public class Door : MonoBehaviour {
 		animator.SetInteger ("AnimationState", 1);
 	}
 
-	void Close () {
+	public void Close () {
 		animator.SetInteger ("AnimationState", 2);
 	}
 

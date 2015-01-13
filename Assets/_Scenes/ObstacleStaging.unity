@@ -171,7 +171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!1 &211858238
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43f05d955aa740d19de5c92b9c05b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  doorTriggers:
+  - {fileID: 1211523257}
+  - {fileID: 1950823360}
 --- !u!61 &211858240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,7 +268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
 --- !u!1001 &391139445
 Prefab:
   m_ObjectHideFlags: 0
@@ -274,6 +276,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: doorTriggers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.2105546
@@ -306,6 +312,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: doorTriggers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1211523257}
+    - target: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: doorTriggers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1950823360}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
   m_RootGameObject: {fileID: 211858238}
@@ -483,7 +497,7 @@ Transform:
   m_Children:
   - {fileID: 1950823362}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!61 &1095535963
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -696,7 +710,7 @@ Transform:
   m_LocalScale: {x: 8.74523354, y: .957208574, z: 1.22822046}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
 --- !u!1001 &1627456530
 Prefab:
   m_ObjectHideFlags: 0
@@ -961,7 +975,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!1 &1950823359
 GameObject:
   m_ObjectHideFlags: 0
