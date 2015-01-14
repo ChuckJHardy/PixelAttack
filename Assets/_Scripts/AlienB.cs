@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class AlienB : MonoBehaviour {
+	public AudioClip attackSound;
+
 	Animator animator;
 	bool readyToAttack;
 
@@ -12,6 +14,7 @@ public class AlienB : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.tag == "Player") {
 			if (readyToAttack) {
+				AudioSource.PlayClipAtPoint(attackSound, transform.position);
 				var explode = other.GetComponent<Explode> () as Explode;
 				explode.OnExplode();
 			} else {

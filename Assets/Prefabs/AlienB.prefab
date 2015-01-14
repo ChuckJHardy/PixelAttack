@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.00300002, y: -3.65499997, z: 0}
+  m_LocalPosition: {x: 5.30999994, y: .800000012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c8830fbad374417b13e662ae3e1615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: 1668da52b40f74381a5ef35c079fbf65, type: 3}
 --- !u!212 &21213374
 SpriteRenderer:
   m_ObjectHideFlags: 1
