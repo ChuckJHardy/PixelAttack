@@ -11,9 +11,10 @@ GameObject:
   - 212: {fileID: 21213374}
   - 95: {fileID: 9513374}
   - 61: {fileID: 6113374}
+  - 114: {fileID: 11415114}
   m_Layer: 0
   m_Name: AlienB
-  m_TagString: Untagged
+  m_TagString: Deadly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,6 +57,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11415114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c8830fbad374417b13e662ae3e1615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21213374
 SpriteRenderer:
   m_ObjectHideFlags: 1
