@@ -7,6 +7,10 @@ public class Player : MonoBehaviour {
 	public Vector2 maxVelocity = new Vector2 (3, 5);
 	public float airSpeedMultiplier = 0.3f;
 
+	public AudioClip leftFootSound;
+	public AudioClip rightFootSound;
+	public AudioClip thudSound;
+
 	Animator animator;
 	PlayerController controller;
 	bool standing;
@@ -52,5 +56,13 @@ public class Player : MonoBehaviour {
 		}
 
 		rigidbody2D.AddForce(new Vector2 (forceX, forceY));
+	}
+
+	void PlayLeftFootSound() {
+		AudioSource.PlayClipAtPoint(leftFootSound, transform.position);
+	}
+
+	void PlayRightFootSound() {
+		AudioSource.PlayClipAtPoint(rightFootSound, transform.position);
 	}
 }
