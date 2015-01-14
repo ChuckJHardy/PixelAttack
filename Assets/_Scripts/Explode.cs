@@ -13,7 +13,7 @@ public class Explode : MonoBehaviour {
 		if (other.gameObject.tag == "Deadly") OnExplode();
 	}
 
-	void OnExplode () {
+	public void OnExplode () {
 		Destroy (gameObject);
 
 		var currentTransform = transform;

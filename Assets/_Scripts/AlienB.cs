@@ -2,13 +2,30 @@
 using System.Collections;
 
 public class AlienB : MonoBehaviour {
-	private Animator animator;
+	Animator animator;
+	bool readyToAttack;
 
 	void Awake () {
 		animator = GetComponent<Animator>();
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
-		animator.SetInteger("AnimationState", 1);
+	void OnTriggerStay2D(Collider2D other) {
+		if (other.gameObject.tag == "Player") {
+			if (readyToAttack) {
+				var explode = other.GetComponent<Explode> () as Explode;
+				explode.OnExplode();
+			} else {
+				animator.SetInteger("AnimationState", 1);
+			}
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D other) {
+		readyToAttack = false;
+		animator.SetInteger("AnimationState", 0);
+	}
+
+	void Attack() {
+		readyToAttack = true;
 	}
 }
