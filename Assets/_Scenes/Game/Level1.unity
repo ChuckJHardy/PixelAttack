@@ -1375,6 +1375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorDelay: .5
+  openSound: {fileID: 8300000, guid: f1dbd7efccef44862912ca33b37cbd42, type: 3}
 --- !u!61 &95580504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4758,6 +4759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound: {fileID: 8300000, guid: e4c9c90bc10a146e79e04d38d58e2507, type: 3}
 --- !u!61 &238581040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14577,6 +14579,10 @@ MonoBehaviour:
   jetSpeed: 15
   maxVelocity: {x: 3, y: 5}
   airSpeedMultiplier: .300000012
+  leftFootSound: {fileID: 8300000, guid: b44873b9d4e0f49be950bbc3b7b72c81, type: 3}
+  rightFootSound: {fileID: 8300000, guid: 5f5aa25730b274521998d02d4ad18a75, type: 3}
+  thudSound: {fileID: 8300000, guid: df02cac684dd24430a0ab37e9f3b7bc3, type: 3}
+  rocketSound: {fileID: 8300000, guid: 638ad38f2715848ed8790668cac91562, type: 3}
 --- !u!50 &445152685
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21626,6 +21632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound: {fileID: 8300000, guid: e4c9c90bc10a146e79e04d38d58e2507, type: 3}
 --- !u!61 &823277126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22470,6 +22477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound: {fileID: 8300000, guid: e30b0629809664d5ca63ed0fb0de2b00, type: 3}
 --- !u!61 &862330565
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23870,7 +23878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 95580503}
-  ignoreTrigger: 1
+  ignoreTrigger: 0
 --- !u!4 &945237382
 Transform:
   m_ObjectHideFlags: 0
@@ -30626,6 +30634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 11433578, guid: d033677cb977644deb811df8a65be3e7, type: 2}
+  attackSound: {fileID: 8300000, guid: e5a2596b8072644599c33146c302ca1a, type: 3}
   attackDelay: 3
 --- !u!95 &1332329213
 Animator:
@@ -36429,8 +36438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sticky: 0
-  doorTriggers:
-  - {fileID: 945237381}
+  doorTriggers: []
+  triggerSound: {fileID: 8300000, guid: 263149764a3b64dc5850f8cbdc2917d8, type: 3}
 --- !u!61 &1633345664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37579,6 +37588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound: {fileID: 8300000, guid: e4c9c90bc10a146e79e04d38d58e2507, type: 3}
 --- !u!61 &1699887492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38534,6 +38544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c8830fbad374417b13e662ae3e1615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: 1668da52b40f74381a5ef35c079fbf65, type: 3}
 --- !u!61 &1762955485
 BoxCollider2D:
   m_ObjectHideFlags: 0
