@@ -76,7 +76,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: AlienBAttackAnimation
-  m_Speed: 4.5
+  m_Speed: 2.5
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 2573e3761809c47748ddb6d562e1d012, type: 2}
