@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	public AudioClip leftFootSound;
 	public AudioClip rightFootSound;
 	public AudioClip thudSound;
+	public AudioClip rocketSound;
 
 	Animator animator;
 	PlayerController controller;
@@ -46,6 +47,8 @@ public class Player : MonoBehaviour {
 		}
 
 		if (controller.moving.y > 0) {
+			PlayRocketSound();
+			
 			if (absVelocityY < maxVelocity.y) {
 				forceY = jetSpeed * controller.moving.y;
 			}
@@ -75,5 +78,18 @@ public class Player : MonoBehaviour {
 
 	void PlayRightFootSound() {
 		AudioSource.PlayClipAtPoint(rightFootSound, transform.position);
+	}
+
+	void PlayRocketSound() {
+		if (GameObject.Find("RocketSound")) return;
+
+		GameObject go = new GameObject("RocketSound");
+		AudioSource audioSource = go.AddComponent<AudioSource> ();
+
+		audioSource.clip = rocketSound;
+		audioSource.volume = 0.7f;
+		audioSource.Play();
+
+		Destroy(go, rocketSound.length);
 	}
 }

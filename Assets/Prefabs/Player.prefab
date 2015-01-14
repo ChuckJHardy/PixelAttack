@@ -169,6 +169,7 @@ MonoBehaviour:
   leftFootSound: {fileID: 8300000, guid: b44873b9d4e0f49be950bbc3b7b72c81, type: 3}
   rightFootSound: {fileID: 8300000, guid: 5f5aa25730b274521998d02d4ad18a75, type: 3}
   thudSound: {fileID: 8300000, guid: df02cac684dd24430a0ab37e9f3b7bc3, type: 3}
+  rocketSound: {fileID: 8300000, guid: 638ad38f2715848ed8790668cac91562, type: 3}
 --- !u!114 &11495514
 MonoBehaviour:
   m_ObjectHideFlags: 1
