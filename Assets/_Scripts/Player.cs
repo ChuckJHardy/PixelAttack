@@ -58,6 +58,17 @@ public class Player : MonoBehaviour {
 		rigidbody2D.AddForce(new Vector2 (forceX, forceY));
 	}
 
+	void OnCollisionEnter2D(Collision2D other) {
+		if (!standing) {
+			var absVelX = Mathf.Abs(rigidbody2D.velocity.x);
+			var absVelY = Mathf.Abs(rigidbody2D.velocity.y);
+
+			if (absVelX <= 0.1f || absVelY <= 0.1f) {
+				AudioSource.PlayClipAtPoint(thudSound, transform.position);
+			}
+		}
+	}
+
 	void PlayLeftFootSound() {
 		AudioSource.PlayClipAtPoint(leftFootSound, transform.position);
 	}
