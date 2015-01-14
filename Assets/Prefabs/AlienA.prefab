@@ -15,6 +15,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &159558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459558}
+  m_Layer: 0
+  m_Name: AvoidWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &163830
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +39,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 463830}
   m_Layer: 0
-  m_Name: AvoidWall
+  m_Name: SightStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +60,7 @@ GameObject:
   - 114: {fileID: 11485864}
   - 114: {fileID: 11474930}
   - 114: {fileID: 11428448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AlienA
   m_TagString: Deadly
   m_Icon: {fileID: 0}
@@ -64,6 +79,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 477984}
   m_RootOrder: 1
+--- !u!4 &459558
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .549999952, y: -.0199999809, z: .0299999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 477984}
+  m_RootOrder: 0
 --- !u!4 &463830
 Transform:
   m_ObjectHideFlags: 1
@@ -71,11 +98,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .549999952, y: -.0199999809, z: .0299999993}
+  m_LocalPosition: {x: .319999993, y: -.0199999996, z: .0299999993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 477984}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!4 &477984
 Transform:
   m_ObjectHideFlags: 1
@@ -86,8 +113,9 @@ Transform:
   m_LocalPosition: {x: 3.05999994, y: .419999987, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 463830}
+  - {fileID: 459558}
   - {fileID: 428634}
+  - {fileID: 463830}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5077984
@@ -142,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b441ee8c69fa14c13a5602d475c86db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightStart: {fileID: 477984}
+  sightStart: {fileID: 463830}
   sightEnd: {fileID: 428634}
   needsCollision: 0
 --- !u!114 &11474930
@@ -156,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b441ee8c69fa14c13a5602d475c86db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightStart: {fileID: 477984}
-  sightEnd: {fileID: 463830}
+  sightStart: {fileID: 463830}
+  sightEnd: {fileID: 459558}
   needsCollision: 1
 --- !u!114 &11485864
 MonoBehaviour:
