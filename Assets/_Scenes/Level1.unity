@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 5059277}
   - 212: {fileID: 5059276}
   - 61: {fileID: 5059278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - 4: {fileID: 7594080}
   - 212: {fileID: 7594079}
   - 61: {fileID: 7594081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   - 4: {fileID: 11826866}
   - 212: {fileID: 11826865}
   - 61: {fileID: 11826867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - 4: {fileID: 19418035}
   - 212: {fileID: 19418034}
   - 61: {fileID: 19418036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - 4: {fileID: 38846715}
   - 212: {fileID: 38846714}
   - 61: {fileID: 38846716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,7 +603,7 @@ GameObject:
   - 4: {fileID: 49044789}
   - 212: {fileID: 49044788}
   - 61: {fileID: 49044790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1227,7 @@ GameObject:
   - 4: {fileID: 89506173}
   - 212: {fileID: 89506172}
   - 61: {fileID: 89506174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1290,7 +1290,7 @@ GameObject:
   - 4: {fileID: 89566274}
   - 212: {fileID: 89566273}
   - 61: {fileID: 89566275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1343,6 +1343,102 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1 &95580502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 120590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 95580507}
+  - 212: {fileID: 95580506}
+  - 95: {fileID: 95580505}
+  - 61: {fileID: 95580504}
+  - 114: {fileID: 95580503}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &95580503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11440696, guid: 8f35aba5f1c054088a444735abc5a527,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 95580502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff2de754c0974fc79034e546593a24e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorDelay: .5
+--- !u!61 &95580504
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6173064, guid: 8f35aba5f1c054088a444735abc5a527,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 95580502}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .639999986, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!95 &95580505
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9520590, guid: 8f35aba5f1c054088a444735abc5a527,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 95580502}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 025aa00fb8ccb447aa48a45bef27411f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &95580506
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21220590, guid: 8f35aba5f1c054088a444735abc5a527,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 95580502}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: f98a2e931a5694139a72802802e27fd5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &95580507
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 95580502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.77600002, y: -3.95499992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 945237382}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &97164548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,7 +1602,7 @@ GameObject:
   - 4: {fileID: 101185394}
   - 212: {fileID: 101185393}
   - 61: {fileID: 101185395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1620,7 +1716,7 @@ GameObject:
   - 4: {fileID: 103823669}
   - 212: {fileID: 103823668}
   - 61: {fileID: 103823670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1830,7 @@ GameObject:
   - 4: {fileID: 105760498}
   - 212: {fileID: 105760497}
   - 61: {fileID: 105760499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1950,7 +2046,7 @@ GameObject:
   - 4: {fileID: 110551689}
   - 212: {fileID: 110551688}
   - 61: {fileID: 110551690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2217,7 +2313,7 @@ GameObject:
   - 4: {fileID: 119017226}
   - 212: {fileID: 119017225}
   - 61: {fileID: 119017227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2331,7 +2427,7 @@ GameObject:
   - 4: {fileID: 128711531}
   - 212: {fileID: 128711530}
   - 61: {fileID: 128711532}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2394,7 +2490,7 @@ GameObject:
   - 4: {fileID: 129451860}
   - 212: {fileID: 129451859}
   - 61: {fileID: 129451861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2508,7 +2604,7 @@ GameObject:
   - 4: {fileID: 137546274}
   - 212: {fileID: 137546273}
   - 61: {fileID: 137546275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2622,7 +2718,7 @@ GameObject:
   - 4: {fileID: 144635771}
   - 212: {fileID: 144635770}
   - 61: {fileID: 144635772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2685,7 +2781,7 @@ GameObject:
   - 4: {fileID: 149979802}
   - 212: {fileID: 149979801}
   - 61: {fileID: 149979803}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2799,7 +2895,7 @@ GameObject:
   - 4: {fileID: 152865002}
   - 212: {fileID: 152865001}
   - 61: {fileID: 152865003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2913,7 +3009,7 @@ GameObject:
   - 4: {fileID: 156468730}
   - 212: {fileID: 156468729}
   - 61: {fileID: 156468731}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2976,7 +3072,7 @@ GameObject:
   - 4: {fileID: 160623447}
   - 212: {fileID: 160623446}
   - 61: {fileID: 160623448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3141,7 +3237,7 @@ GameObject:
   - 4: {fileID: 168455137}
   - 212: {fileID: 168455136}
   - 61: {fileID: 168455138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3408,7 +3504,7 @@ GameObject:
   - 4: {fileID: 177831006}
   - 212: {fileID: 177831005}
   - 61: {fileID: 177831007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3512,6 +3608,50 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &182154499
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -7.32600021
+      objectReference: {fileID: 0}
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.51800013
+      objectReference: {fileID: 0}
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+  m_RootGameObject: {fileID: 1410363278}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &183585312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +3713,7 @@ GameObject:
   - 4: {fileID: 188857003}
   - 212: {fileID: 188857002}
   - 61: {fileID: 188857004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3687,7 +3827,7 @@ GameObject:
   - 4: {fileID: 192936810}
   - 212: {fileID: 192936809}
   - 61: {fileID: 192936811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3852,7 +3992,7 @@ GameObject:
   - 4: {fileID: 200265364}
   - 212: {fileID: 200265363}
   - 61: {fileID: 200265365}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3966,7 +4106,7 @@ GameObject:
   - 4: {fileID: 207421236}
   - 212: {fileID: 207421235}
   - 61: {fileID: 207421237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4080,7 +4220,7 @@ GameObject:
   - 4: {fileID: 213746359}
   - 212: {fileID: 213746358}
   - 61: {fileID: 213746360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4194,7 +4334,7 @@ GameObject:
   - 4: {fileID: 225979836}
   - 212: {fileID: 225979835}
   - 61: {fileID: 225979837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4563,7 +4703,7 @@ GameObject:
   - 4: {fileID: 233991755}
   - 212: {fileID: 233991754}
   - 61: {fileID: 233991756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4616,6 +4756,99 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1 &238581037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 199302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_PrefabInternal: {fileID: 1562438227}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 238581042}
+  - 212: {fileID: 238581041}
+  - 61: {fileID: 238581040}
+  - 114: {fileID: 238581039}
+  - 114: {fileID: 238581038}
+  m_Layer: 0
+  m_Name: Crystal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &238581038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400604, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1562438227}
+  m_GameObject: {fileID: 238581037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f0be9a18f3948e58704f1181807444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  resourceName: crystal-sprites
+  currentSpriteIndex: -1
+--- !u!114 &238581039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1562438227}
+  m_GameObject: {fileID: 238581037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &238581040
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6199302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1562438227}
+  m_GameObject: {fileID: 238581037}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .25, y: .449999988}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &238581041
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21299302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1562438227}
+  m_GameObject: {fileID: 238581037}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c34d2d26a57334b1798138e0db517df7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &238581042
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_PrefabInternal: {fileID: 1562438227}
+  m_GameObject: {fileID: 238581037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.74715948, y: -5.08871078, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &241631432
 GameObject:
   m_ObjectHideFlags: 0
@@ -4626,7 +4859,7 @@ GameObject:
   - 4: {fileID: 241631434}
   - 212: {fileID: 241631433}
   - 61: {fileID: 241631435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4791,7 +5024,7 @@ GameObject:
   - 4: {fileID: 253580025}
   - 212: {fileID: 253580024}
   - 61: {fileID: 253580026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4905,7 +5138,7 @@ GameObject:
   - 4: {fileID: 261101329}
   - 212: {fileID: 261101328}
   - 61: {fileID: 261101330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5121,7 +5354,7 @@ GameObject:
   - 4: {fileID: 282090436}
   - 212: {fileID: 282090435}
   - 61: {fileID: 282090437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5184,7 +5417,7 @@ GameObject:
   - 4: {fileID: 283802668}
   - 212: {fileID: 283802667}
   - 61: {fileID: 283802669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5349,7 +5582,7 @@ GameObject:
   - 4: {fileID: 290218590}
   - 212: {fileID: 290218589}
   - 61: {fileID: 290218591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5463,7 +5696,7 @@ GameObject:
   - 4: {fileID: 293920451}
   - 212: {fileID: 293920450}
   - 61: {fileID: 293920452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5577,7 +5810,7 @@ GameObject:
   - 4: {fileID: 299243655}
   - 212: {fileID: 299243654}
   - 61: {fileID: 299243656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5742,7 +5975,7 @@ GameObject:
   - 4: {fileID: 304166929}
   - 212: {fileID: 304166928}
   - 61: {fileID: 304166930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5856,7 +6089,7 @@ GameObject:
   - 4: {fileID: 314138189}
   - 212: {fileID: 314138188}
   - 61: {fileID: 314138190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6174,7 +6407,7 @@ GameObject:
   - 4: {fileID: 332164236}
   - 212: {fileID: 332164235}
   - 61: {fileID: 332164237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6645,7 +6878,7 @@ GameObject:
   - 4: {fileID: 348175605}
   - 212: {fileID: 348175604}
   - 61: {fileID: 348175606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6759,7 +6992,7 @@ GameObject:
   - 4: {fileID: 356295118}
   - 212: {fileID: 356295117}
   - 61: {fileID: 356295119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10743,6 +10976,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61,
         type: 3}
+    - target: {fileID: 119872, guid: 8dc91f0ed3a3047ba83e70c946c8aa89, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8dc91f0ed3a3047ba83e70c946c8aa89, type: 2}
   m_RootGameObject: {fileID: 1763545865}
@@ -11013,7 +11250,7 @@ GameObject:
   - 4: {fileID: 373401688}
   - 212: {fileID: 373401687}
   - 61: {fileID: 373401689}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11076,7 +11313,7 @@ GameObject:
   - 4: {fileID: 376692887}
   - 212: {fileID: 376692886}
   - 61: {fileID: 376692888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11139,7 +11376,7 @@ GameObject:
   - 4: {fileID: 377279077}
   - 212: {fileID: 377279076}
   - 61: {fileID: 377279078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11202,7 +11439,7 @@ GameObject:
   - 4: {fileID: 378654952}
   - 212: {fileID: 378654951}
   - 61: {fileID: 378654953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11265,7 +11502,7 @@ GameObject:
   - 4: {fileID: 382355414}
   - 212: {fileID: 382355413}
   - 61: {fileID: 382355415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11379,7 +11616,7 @@ GameObject:
   - 4: {fileID: 389107957}
   - 212: {fileID: 389107956}
   - 61: {fileID: 389107958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11595,7 +11832,7 @@ GameObject:
   - 4: {fileID: 392677827}
   - 212: {fileID: 392677826}
   - 61: {fileID: 392677828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11658,7 +11895,7 @@ GameObject:
   - 4: {fileID: 393947471}
   - 212: {fileID: 393947470}
   - 61: {fileID: 393947472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11721,7 +11958,7 @@ GameObject:
   - 4: {fileID: 395104485}
   - 212: {fileID: 395104484}
   - 61: {fileID: 395104486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11835,7 +12072,7 @@ GameObject:
   - 4: {fileID: 396035946}
   - 212: {fileID: 396035945}
   - 61: {fileID: 396035947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12051,7 +12288,7 @@ GameObject:
   - 4: {fileID: 402840288}
   - 212: {fileID: 402840287}
   - 61: {fileID: 402840289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12165,7 +12402,7 @@ GameObject:
   - 4: {fileID: 412757571}
   - 212: {fileID: 412757570}
   - 61: {fileID: 412757572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12228,7 +12465,7 @@ GameObject:
   - 4: {fileID: 419735491}
   - 212: {fileID: 419735490}
   - 61: {fileID: 419735492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12291,7 +12528,7 @@ GameObject:
   - 4: {fileID: 430591643}
   - 212: {fileID: 430591642}
   - 61: {fileID: 430591644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12585,11 +12822,11 @@ Transform:
   m_PrefabInternal: {fileID: 2052649460}
   m_GameObject: {fileID: 445152680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.79325199, y: 6.03732347, z: 0}
+  m_LocalPosition: {x: -7.80000019, y: 5.92999983, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!1 &446708999
 GameObject:
   m_ObjectHideFlags: 0
@@ -12651,7 +12888,7 @@ GameObject:
   - 4: {fileID: 446722596}
   - 212: {fileID: 446722595}
   - 61: {fileID: 446722597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12816,7 +13053,7 @@ GameObject:
   - 4: {fileID: 449152759}
   - 212: {fileID: 449152758}
   - 61: {fileID: 449152760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12879,7 +13116,7 @@ GameObject:
   - 4: {fileID: 450217394}
   - 212: {fileID: 450217393}
   - 61: {fileID: 450217395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13095,7 +13332,7 @@ GameObject:
   - 4: {fileID: 455137527}
   - 212: {fileID: 455137526}
   - 61: {fileID: 455137528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13250,6 +13487,70 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &463752384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 149582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+  m_PrefabInternal: {fileID: 1988994409}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 463752387}
+  - 212: {fileID: 463752386}
+  - 61: {fileID: 463752385}
+  m_Layer: 0
+  m_Name: LargeSpike
+  m_TagString: Deadly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &463752385
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6149582, guid: f37a39a48251b4cb8823c5173edb992d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1988994409}
+  m_GameObject: {fileID: 463752384}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 4, y: .200000003}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &463752386
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21249582, guid: f37a39a48251b4cb8823c5173edb992d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1988994409}
+  m_GameObject: {fileID: 463752384}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300006, guid: 71a2585c078674ebda34ef4e90491da0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &463752387
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+  m_PrefabInternal: {fileID: 1988994409}
+  m_GameObject: {fileID: 463752384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.760842085, y: 2.4422462, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &464365720
 GameObject:
   m_ObjectHideFlags: 0
@@ -13556,6 +13857,54 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &486919791
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.768999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.34500003
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalScale.y
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 03282b24af0204633aa28373babafb97, type: 2}
+  m_RootGameObject: {fileID: 777810715}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &489418782
 GameObject:
   m_ObjectHideFlags: 0
@@ -13617,7 +13966,7 @@ GameObject:
   - 4: {fileID: 495140608}
   - 212: {fileID: 495140607}
   - 61: {fileID: 495140609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13731,7 +14080,7 @@ GameObject:
   - 4: {fileID: 501487550}
   - 212: {fileID: 501487549}
   - 61: {fileID: 501487551}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13896,7 +14245,7 @@ GameObject:
   - 4: {fileID: 513253661}
   - 212: {fileID: 513253660}
   - 61: {fileID: 513253662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14112,7 +14461,7 @@ GameObject:
   - 4: {fileID: 518755385}
   - 212: {fileID: 518755384}
   - 61: {fileID: 518755386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14175,7 +14524,7 @@ GameObject:
   - 4: {fileID: 519023033}
   - 212: {fileID: 519023032}
   - 61: {fileID: 519023034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14289,7 +14638,7 @@ GameObject:
   - 4: {fileID: 522112584}
   - 212: {fileID: 522112583}
   - 61: {fileID: 522112585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14352,7 +14701,7 @@ GameObject:
   - 4: {fileID: 522231738}
   - 212: {fileID: 522231737}
   - 61: {fileID: 522231739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14568,7 +14917,7 @@ GameObject:
   - 4: {fileID: 549557712}
   - 212: {fileID: 549557711}
   - 61: {fileID: 549557713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14631,7 +14980,7 @@ GameObject:
   - 4: {fileID: 550114763}
   - 212: {fileID: 550114762}
   - 61: {fileID: 550114764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14694,7 +15043,7 @@ GameObject:
   - 4: {fileID: 551012214}
   - 212: {fileID: 551012213}
   - 61: {fileID: 551012215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14757,7 +15106,7 @@ GameObject:
   - 4: {fileID: 553313170}
   - 212: {fileID: 553313169}
   - 61: {fileID: 553313171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14922,7 +15271,7 @@ GameObject:
   - 4: {fileID: 572674764}
   - 212: {fileID: 572674763}
   - 61: {fileID: 572674765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14985,7 +15334,7 @@ GameObject:
   - 4: {fileID: 576533731}
   - 212: {fileID: 576533730}
   - 61: {fileID: 576533732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15150,7 +15499,7 @@ GameObject:
   - 4: {fileID: 580753430}
   - 212: {fileID: 580753429}
   - 61: {fileID: 580753431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15213,7 +15562,7 @@ GameObject:
   - 4: {fileID: 581204825}
   - 212: {fileID: 581204824}
   - 61: {fileID: 581204826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15276,7 +15625,7 @@ GameObject:
   - 4: {fileID: 583390475}
   - 212: {fileID: 583390474}
   - 61: {fileID: 583390476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15441,7 +15790,7 @@ GameObject:
   - 4: {fileID: 596265122}
   - 212: {fileID: 596265121}
   - 61: {fileID: 596265123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15504,7 +15853,7 @@ GameObject:
   - 4: {fileID: 604647582}
   - 212: {fileID: 604647581}
   - 61: {fileID: 604647583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15669,7 +16018,7 @@ GameObject:
   - 4: {fileID: 612198171}
   - 212: {fileID: 612198170}
   - 61: {fileID: 612198172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15834,7 +16183,7 @@ GameObject:
   - 4: {fileID: 617604205}
   - 212: {fileID: 617604204}
   - 61: {fileID: 617604206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15897,7 +16246,7 @@ GameObject:
   - 4: {fileID: 627351134}
   - 212: {fileID: 627351133}
   - 61: {fileID: 627351135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15958,7 +16307,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 627417292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16224,7 +16573,7 @@ Transform:
   - {fileID: 103823669}
   - {fileID: 1810144209}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 16
 --- !u!1 &633666048
 GameObject:
   m_ObjectHideFlags: 0
@@ -16235,7 +16584,7 @@ GameObject:
   - 4: {fileID: 633666050}
   - 212: {fileID: 633666049}
   - 61: {fileID: 633666051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16298,7 +16647,7 @@ GameObject:
   - 4: {fileID: 636749824}
   - 212: {fileID: 636749823}
   - 61: {fileID: 636749825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16361,7 +16710,7 @@ GameObject:
   - 4: {fileID: 637962319}
   - 212: {fileID: 637962318}
   - 61: {fileID: 637962320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16424,7 +16773,7 @@ GameObject:
   - 4: {fileID: 640013859}
   - 212: {fileID: 640013858}
   - 61: {fileID: 640013860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16487,7 +16836,7 @@ GameObject:
   - 4: {fileID: 643386436}
   - 212: {fileID: 643386435}
   - 61: {fileID: 643386437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16601,7 +16950,7 @@ GameObject:
   - 4: {fileID: 651880230}
   - 212: {fileID: 651880229}
   - 61: {fileID: 651880231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16868,7 +17217,7 @@ GameObject:
   - 4: {fileID: 666930087}
   - 212: {fileID: 666930086}
   - 61: {fileID: 666930088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16931,7 +17280,7 @@ GameObject:
   - 4: {fileID: 678061213}
   - 212: {fileID: 678061212}
   - 61: {fileID: 678061214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16994,7 +17343,7 @@ GameObject:
   - 4: {fileID: 682327866}
   - 212: {fileID: 682327865}
   - 61: {fileID: 682327867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17098,6 +17447,33 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &685458218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 159558, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 685458219}
+  m_Layer: 0
+  m_Name: AvoidWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &685458219
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 459558, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 685458218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .549999952, y: -.0199999809, z: .0299999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1480256536}
+  m_RootOrder: 0
 --- !u!1 &690975697
 GameObject:
   m_ObjectHideFlags: 0
@@ -17108,7 +17484,7 @@ GameObject:
   - 4: {fileID: 690975699}
   - 212: {fileID: 690975698}
   - 61: {fileID: 690975700}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17171,7 +17547,7 @@ GameObject:
   - 4: {fileID: 696976724}
   - 212: {fileID: 696976723}
   - 61: {fileID: 696976725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17285,7 +17661,7 @@ GameObject:
   - 4: {fileID: 699165895}
   - 212: {fileID: 699165894}
   - 61: {fileID: 699165896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17348,7 +17724,7 @@ GameObject:
   - 4: {fileID: 700343579}
   - 212: {fileID: 700343578}
   - 61: {fileID: 700343580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17411,7 +17787,7 @@ GameObject:
   - 4: {fileID: 706788398}
   - 212: {fileID: 706788397}
   - 61: {fileID: 706788399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17474,7 +17850,7 @@ GameObject:
   - 4: {fileID: 710709990}
   - 212: {fileID: 710709989}
   - 61: {fileID: 710709991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17537,7 +17913,7 @@ GameObject:
   - 4: {fileID: 711509263}
   - 212: {fileID: 711509262}
   - 61: {fileID: 711509264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17590,6 +17966,50 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1001 &714474101
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.79668808
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.0156511068
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_RootGameObject: {fileID: 823277123}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &720029367
 GameObject:
   m_ObjectHideFlags: 0
@@ -17641,6 +18061,70 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &722276286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 130106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+  m_PrefabInternal: {fileID: 1149505684}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 722276289}
+  - 212: {fileID: 722276288}
+  - 61: {fileID: 722276287}
+  m_Layer: 0
+  m_Name: SingleSpike
+  m_TagString: Deadly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &722276287
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6130106, guid: 03282b24af0204633aa28373babafb97,
+    type: 2}
+  m_PrefabInternal: {fileID: 1149505684}
+  m_GameObject: {fileID: 722276286}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1, y: .200000003}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &722276288
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21230106, guid: 03282b24af0204633aa28373babafb97,
+    type: 2}
+  m_PrefabInternal: {fileID: 1149505684}
+  m_GameObject: {fileID: 722276286}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 71a2585c078674ebda34ef4e90491da0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &722276289
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+  m_PrefabInternal: {fileID: 1149505684}
+  m_GameObject: {fileID: 722276286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.7750001, y: -2.35100007, z: 0}
+  m_LocalScale: {x: 1, y: -1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &722767379
 GameObject:
   m_ObjectHideFlags: 0
@@ -17855,7 +18339,7 @@ GameObject:
   - 4: {fileID: 732106314}
   - 212: {fileID: 732106313}
   - 61: {fileID: 732106315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17969,7 +18453,7 @@ GameObject:
   - 4: {fileID: 745766109}
   - 212: {fileID: 745766108}
   - 61: {fileID: 745766110}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18134,7 +18618,7 @@ GameObject:
   - 4: {fileID: 755786042}
   - 212: {fileID: 755786041}
   - 61: {fileID: 755786043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18350,7 +18834,7 @@ GameObject:
   - 4: {fileID: 774857718}
   - 212: {fileID: 774857717}
   - 61: {fileID: 774857719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18403,6 +18887,70 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1 &777810715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 130106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+  m_PrefabInternal: {fileID: 486919791}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 777810718}
+  - 212: {fileID: 777810717}
+  - 61: {fileID: 777810716}
+  m_Layer: 0
+  m_Name: SingleSpike
+  m_TagString: Deadly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &777810716
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6130106, guid: 03282b24af0204633aa28373babafb97,
+    type: 2}
+  m_PrefabInternal: {fileID: 486919791}
+  m_GameObject: {fileID: 777810715}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1, y: .200000003}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &777810717
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21230106, guid: 03282b24af0204633aa28373babafb97,
+    type: 2}
+  m_PrefabInternal: {fileID: 486919791}
+  m_GameObject: {fileID: 777810715}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 71a2585c078674ebda34ef4e90491da0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &777810718
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+  m_PrefabInternal: {fileID: 486919791}
+  m_GameObject: {fileID: 777810715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.768999994, y: -1.34500003, z: 0}
+  m_LocalScale: {x: 1, y: -1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &778887108
 GameObject:
   m_ObjectHideFlags: 0
@@ -18515,7 +19063,7 @@ GameObject:
   - 4: {fileID: 791654276}
   - 212: {fileID: 791654275}
   - 61: {fileID: 791654277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18578,7 +19126,7 @@ GameObject:
   - 4: {fileID: 792521106}
   - 212: {fileID: 792521105}
   - 61: {fileID: 792521107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18692,7 +19240,7 @@ GameObject:
   - 4: {fileID: 795222464}
   - 212: {fileID: 795222463}
   - 61: {fileID: 795222465}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18755,7 +19303,7 @@ GameObject:
   - 4: {fileID: 796664689}
   - 212: {fileID: 796664688}
   - 61: {fileID: 796664690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18920,7 +19468,7 @@ GameObject:
   - 4: {fileID: 800480972}
   - 212: {fileID: 800480971}
   - 61: {fileID: 800480973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19034,7 +19582,7 @@ GameObject:
   - 4: {fileID: 812523612}
   - 212: {fileID: 812523611}
   - 61: {fileID: 812523613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19097,7 +19645,7 @@ GameObject:
   - 4: {fileID: 818522672}
   - 212: {fileID: 818522671}
   - 61: {fileID: 818522673}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19150,6 +19698,99 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1 &823277123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 199302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_PrefabInternal: {fileID: 714474101}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 823277128}
+  - 212: {fileID: 823277127}
+  - 61: {fileID: 823277126}
+  - 114: {fileID: 823277125}
+  - 114: {fileID: 823277124}
+  m_Layer: 0
+  m_Name: Crystal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &823277124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400604, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 714474101}
+  m_GameObject: {fileID: 823277123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f0be9a18f3948e58704f1181807444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  resourceName: crystal-sprites
+  currentSpriteIndex: -1
+--- !u!114 &823277125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 714474101}
+  m_GameObject: {fileID: 823277123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &823277126
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6199302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 714474101}
+  m_GameObject: {fileID: 823277123}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .25, y: .449999988}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &823277127
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21299302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 714474101}
+  m_GameObject: {fileID: 823277123}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c34d2d26a57334b1798138e0db517df7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &823277128
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_PrefabInternal: {fileID: 714474101}
+  m_GameObject: {fileID: 823277123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.79668808, y: -.0156511068, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &827047793
 GameObject:
   m_ObjectHideFlags: 0
@@ -19313,7 +19954,7 @@ GameObject:
   - 4: {fileID: 834711101}
   - 212: {fileID: 834711100}
   - 61: {fileID: 834711102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19784,7 +20425,7 @@ GameObject:
   - 4: {fileID: 855004409}
   - 212: {fileID: 855004408}
   - 61: {fileID: 855004410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19847,7 +20488,7 @@ GameObject:
   - 4: {fileID: 858438480}
   - 212: {fileID: 858438479}
   - 61: {fileID: 858438481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19900,6 +20541,99 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1 &862330562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 199302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+  m_PrefabInternal: {fileID: 1241661810}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 862330567}
+  - 212: {fileID: 862330566}
+  - 61: {fileID: 862330565}
+  - 114: {fileID: 862330564}
+  - 114: {fileID: 862330563}
+  m_Layer: 0
+  m_Name: Artifact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &862330563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400604, guid: 808add08b662a465486c5bd9f2e3e351,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241661810}
+  m_GameObject: {fileID: 862330562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f0be9a18f3948e58704f1181807444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  resourceName: artifact-sprites
+  currentSpriteIndex: -1
+--- !u!114 &862330564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499302, guid: 808add08b662a465486c5bd9f2e3e351,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241661810}
+  m_GameObject: {fileID: 862330562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &862330565
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6199302, guid: 808add08b662a465486c5bd9f2e3e351,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241661810}
+  m_GameObject: {fileID: 862330562}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .25, y: .449999988}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &862330566
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21299302, guid: 808add08b662a465486c5bd9f2e3e351,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241661810}
+  m_GameObject: {fileID: 862330562}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 1d196dd90167d4784aaa9cf4fb76b23f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &862330567
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+  m_PrefabInternal: {fileID: 1241661810}
+  m_GameObject: {fileID: 862330562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.23732162, y: -4.20074463, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &864748261
 GameObject:
   m_ObjectHideFlags: 0
@@ -20063,7 +20797,7 @@ GameObject:
   - 4: {fileID: 883300524}
   - 212: {fileID: 883300523}
   - 61: {fileID: 883300525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20330,7 +21064,7 @@ GameObject:
   - 4: {fileID: 891443522}
   - 212: {fileID: 891443521}
   - 61: {fileID: 891443523}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20546,7 +21280,7 @@ GameObject:
   - 4: {fileID: 906623837}
   - 212: {fileID: 906623836}
   - 61: {fileID: 906623838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20609,7 +21343,7 @@ GameObject:
   - 4: {fileID: 906927019}
   - 212: {fileID: 906927018}
   - 61: {fileID: 906927020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20825,7 +21559,7 @@ GameObject:
   - 4: {fileID: 919211615}
   - 212: {fileID: 919211614}
   - 61: {fileID: 919211616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20939,7 +21673,7 @@ GameObject:
   - 4: {fileID: 939832848}
   - 212: {fileID: 939832847}
   - 61: {fileID: 939832849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21094,6 +21828,61 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &945237380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 128800, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 945237382}
+  - 61: {fileID: 945237383}
+  - 114: {fileID: 945237381}
+  m_Layer: 0
+  m_Name: DoorTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &945237381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11434488, guid: 8f35aba5f1c054088a444735abc5a527,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 945237380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51dfb5360491d4a1b855617ec53f2173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 95580503}
+  ignoreTrigger: 1
+--- !u!4 &945237382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 428800, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 945237380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .600000024, z: .0299999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 95580507}
+  m_RootOrder: 0
+--- !u!61 &945237383
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6128800, guid: 8f35aba5f1c054088a444735abc5a527,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501345614}
+  m_GameObject: {fileID: 945237380}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.79999995, y: 1}
+  m_Center: {x: 0, y: -.600000024}
 --- !u!1 &952765503
 GameObject:
   m_ObjectHideFlags: 0
@@ -21155,7 +21944,7 @@ GameObject:
   - 4: {fileID: 957385952}
   - 212: {fileID: 957385951}
   - 61: {fileID: 957385953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21269,7 +22058,7 @@ GameObject:
   - 4: {fileID: 964593495}
   - 212: {fileID: 964593494}
   - 61: {fileID: 964593496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21332,7 +22121,7 @@ GameObject:
   - 4: {fileID: 965895905}
   - 212: {fileID: 965895904}
   - 61: {fileID: 965895906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21446,7 +22235,7 @@ GameObject:
   - 4: {fileID: 974963599}
   - 212: {fileID: 974963598}
   - 61: {fileID: 974963600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21764,7 +22553,7 @@ GameObject:
   - 4: {fileID: 983819305}
   - 212: {fileID: 983819304}
   - 61: {fileID: 983819306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21827,7 +22616,7 @@ GameObject:
   - 4: {fileID: 991162235}
   - 212: {fileID: 991162234}
   - 61: {fileID: 991162236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21890,7 +22679,7 @@ GameObject:
   - 4: {fileID: 995776729}
   - 212: {fileID: 995776728}
   - 61: {fileID: 995776730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22259,7 +23048,7 @@ GameObject:
   - 4: {fileID: 1018234826}
   - 212: {fileID: 1018234825}
   - 61: {fileID: 1018234827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22475,7 +23264,7 @@ GameObject:
   - 4: {fileID: 1026788982}
   - 212: {fileID: 1026788981}
   - 61: {fileID: 1026788983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22589,7 +23378,7 @@ GameObject:
   - 4: {fileID: 1040812866}
   - 212: {fileID: 1040812865}
   - 61: {fileID: 1040812867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23060,7 +23849,7 @@ GameObject:
   - 4: {fileID: 1067159582}
   - 212: {fileID: 1067159581}
   - 61: {fileID: 1067159583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23276,7 +24065,7 @@ GameObject:
   - 4: {fileID: 1075810967}
   - 212: {fileID: 1075810966}
   - 61: {fileID: 1075810968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23339,7 +24128,7 @@ GameObject:
   - 4: {fileID: 1078037931}
   - 212: {fileID: 1078037930}
   - 61: {fileID: 1078037932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23402,7 +24191,7 @@ GameObject:
   - 4: {fileID: 1087946491}
   - 212: {fileID: 1087946490}
   - 61: {fileID: 1087946492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23465,7 +24254,7 @@ GameObject:
   - 4: {fileID: 1088136137}
   - 212: {fileID: 1088136136}
   - 61: {fileID: 1088136138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23579,7 +24368,7 @@ GameObject:
   - 4: {fileID: 1092552861}
   - 212: {fileID: 1092552860}
   - 61: {fileID: 1092552862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23693,7 +24482,7 @@ GameObject:
   - 4: {fileID: 1100498348}
   - 212: {fileID: 1100498347}
   - 61: {fileID: 1100498349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23858,7 +24647,7 @@ GameObject:
   - 4: {fileID: 1115491127}
   - 212: {fileID: 1115491126}
   - 61: {fileID: 1115491128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23921,7 +24710,7 @@ GameObject:
   - 4: {fileID: 1116886274}
   - 212: {fileID: 1116886273}
   - 61: {fileID: 1116886275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24035,7 +24824,7 @@ GameObject:
   - 4: {fileID: 1122008212}
   - 212: {fileID: 1122008211}
   - 61: {fileID: 1122008213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24098,7 +24887,7 @@ GameObject:
   - 4: {fileID: 1129005775}
   - 212: {fileID: 1129005774}
   - 61: {fileID: 1129005776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24161,7 +24950,7 @@ GameObject:
   - 4: {fileID: 1133711242}
   - 212: {fileID: 1133711241}
   - 61: {fileID: 1133711243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24377,7 +25166,7 @@ GameObject:
   - 4: {fileID: 1145656817}
   - 212: {fileID: 1145656816}
   - 61: {fileID: 1145656818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24430,6 +25219,54 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1001 &1149505684
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.7750001
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.35100007
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430106, guid: 03282b24af0204633aa28373babafb97, type: 2}
+      propertyPath: m_LocalScale.y
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 03282b24af0204633aa28373babafb97, type: 2}
+  m_RootGameObject: {fileID: 722276286}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1149542368
 GameObject:
   m_ObjectHideFlags: 0
@@ -24542,7 +25379,7 @@ GameObject:
   - 4: {fileID: 1157516015}
   - 212: {fileID: 1157516014}
   - 61: {fileID: 1157516016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24656,7 +25493,7 @@ GameObject:
   - 4: {fileID: 1164950154}
   - 212: {fileID: 1164950153}
   - 61: {fileID: 1164950155}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24872,7 +25709,7 @@ GameObject:
   - 4: {fileID: 1178490583}
   - 212: {fileID: 1178490582}
   - 61: {fileID: 1178490584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25037,7 +25874,7 @@ GameObject:
   - 4: {fileID: 1186995465}
   - 212: {fileID: 1186995464}
   - 61: {fileID: 1186995466}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25151,7 +25988,7 @@ GameObject:
   - 4: {fileID: 1190160913}
   - 212: {fileID: 1190160912}
   - 61: {fileID: 1190160914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25316,7 +26153,7 @@ GameObject:
   - 4: {fileID: 1199543575}
   - 212: {fileID: 1199543574}
   - 61: {fileID: 1199543576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25583,7 +26420,7 @@ GameObject:
   - 4: {fileID: 1208625314}
   - 212: {fileID: 1208625313}
   - 61: {fileID: 1208625315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25646,7 +26483,7 @@ GameObject:
   - 4: {fileID: 1209690548}
   - 212: {fileID: 1209690547}
   - 61: {fileID: 1209690549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25709,7 +26546,7 @@ GameObject:
   - 4: {fileID: 1210452116}
   - 212: {fileID: 1210452115}
   - 61: {fileID: 1210452117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25874,7 +26711,7 @@ GameObject:
   - 4: {fileID: 1213823391}
   - 212: {fileID: 1213823390}
   - 61: {fileID: 1213823392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25937,7 +26774,7 @@ GameObject:
   - 4: {fileID: 1214428388}
   - 212: {fileID: 1214428387}
   - 61: {fileID: 1214428389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26051,7 +26888,7 @@ GameObject:
   - 4: {fileID: 1216387799}
   - 212: {fileID: 1216387798}
   - 61: {fileID: 1216387800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26114,7 +26951,7 @@ GameObject:
   - 4: {fileID: 1219199064}
   - 212: {fileID: 1219199063}
   - 61: {fileID: 1219199065}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26177,7 +27014,7 @@ GameObject:
   - 4: {fileID: 1225691756}
   - 212: {fileID: 1225691755}
   - 61: {fileID: 1225691757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26383,6 +27220,54 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1241661810
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.23732162
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.20074463
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21299302, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 808add08b662a465486c5bd9f2e3e351, type: 2}
+  m_RootGameObject: {fileID: 862330562}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1241788640
 GameObject:
   m_ObjectHideFlags: 0
@@ -26546,7 +27431,7 @@ GameObject:
   - 4: {fileID: 1260050685}
   - 212: {fileID: 1260050684}
   - 61: {fileID: 1260050686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26609,7 +27494,7 @@ GameObject:
   - 4: {fileID: 1261894356}
   - 212: {fileID: 1261894355}
   - 61: {fileID: 1261894357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26876,7 +27761,7 @@ GameObject:
   - 4: {fileID: 1283849534}
   - 212: {fileID: 1283849533}
   - 61: {fileID: 1283849535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26990,7 +27875,7 @@ GameObject:
   - 4: {fileID: 1295648015}
   - 212: {fileID: 1295648014}
   - 61: {fileID: 1295648016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27104,7 +27989,7 @@ GameObject:
   - 4: {fileID: 1308881800}
   - 212: {fileID: 1308881799}
   - 61: {fileID: 1308881801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27167,7 +28052,7 @@ GameObject:
   - 4: {fileID: 1311200086}
   - 212: {fileID: 1311200085}
   - 61: {fileID: 1311200087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27230,7 +28115,7 @@ GameObject:
   - 4: {fileID: 1320437691}
   - 212: {fileID: 1320437690}
   - 61: {fileID: 1320437692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27293,7 +28178,7 @@ GameObject:
   - 4: {fileID: 1324220875}
   - 212: {fileID: 1324220874}
   - 61: {fileID: 1324220876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27550,6 +28435,89 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1332329211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 122746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+  m_PrefabInternal: {fileID: 1388255633}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1332329215}
+  - 212: {fileID: 1332329214}
+  - 95: {fileID: 1332329213}
+  - 114: {fileID: 1332329212}
+  m_Layer: 0
+  m_Name: AlienC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1332329212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37,
+    type: 2}
+  m_PrefabInternal: {fileID: 1388255633}
+  m_GameObject: {fileID: 1332329211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e9ce9b27ed84e449453c7bfc856ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 11433578, guid: d033677cb977644deb811df8a65be3e7, type: 2}
+  attackDelay: 3
+--- !u!95 &1332329213
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9522746, guid: 22f96dda6f7a041b0b3aaacec86f8f37,
+    type: 2}
+  m_PrefabInternal: {fileID: 1388255633}
+  m_GameObject: {fileID: 1332329211}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 786718bfa4cbd43cdbeca12d5c04ebad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1332329214
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21222746, guid: 22f96dda6f7a041b0b3aaacec86f8f37,
+    type: 2}
+  m_PrefabInternal: {fileID: 1388255633}
+  m_GameObject: {fileID: 1332329211}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e697d7af3d24c410ab20e6ef81fd5f9b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1332329215
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+  m_PrefabInternal: {fileID: 1388255633}
+  m_GameObject: {fileID: 1332329211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.75507402, y: 4.15124989, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
 --- !u!1 &1333120674
 GameObject:
   m_ObjectHideFlags: 0
@@ -27560,7 +28528,7 @@ GameObject:
   - 4: {fileID: 1333120676}
   - 212: {fileID: 1333120675}
   - 61: {fileID: 1333120677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27878,7 +28846,7 @@ GameObject:
   - 4: {fileID: 1357727910}
   - 212: {fileID: 1357727909}
   - 61: {fileID: 1357727911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27941,7 +28909,7 @@ GameObject:
   - 4: {fileID: 1358366297}
   - 212: {fileID: 1358366296}
   - 61: {fileID: 1358366298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28504,6 +29472,55 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1388255633
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.75507402
+      objectReference: {fileID: 0}
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.15124989
+      objectReference: {fileID: 0}
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11422746, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 11433578, guid: d033677cb977644deb811df8a65be3e7,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 22f96dda6f7a041b0b3aaacec86f8f37, type: 2}
+  m_RootGameObject: {fileID: 1332329211}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1388509680
 GameObject:
   m_ObjectHideFlags: 0
@@ -28616,7 +29633,7 @@ GameObject:
   - 4: {fileID: 1399064546}
   - 212: {fileID: 1399064545}
   - 61: {fileID: 1399064547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28679,7 +29696,7 @@ GameObject:
   - 4: {fileID: 1399241148}
   - 212: {fileID: 1399241147}
   - 61: {fileID: 1399241149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28742,7 +29759,7 @@ GameObject:
   - 4: {fileID: 1403267294}
   - 212: {fileID: 1403267293}
   - 61: {fileID: 1403267295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28795,6 +29812,104 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1 &1410363278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 163678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+  m_PrefabInternal: {fileID: 182154499}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1410363283}
+  - 212: {fileID: 1410363282}
+  - 95: {fileID: 1410363281}
+  - 50: {fileID: 1410363280}
+  - 61: {fileID: 1410363279}
+  m_Layer: 0
+  m_Name: PushBlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1410363279
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6163678, guid: b78f4bdba18684264aab99d3d8f490a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 182154499}
+  m_GameObject: {fileID: 1410363278}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!50 &1410363280
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5063678, guid: b78f4bdba18684264aab99d3d8f490a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 182154499}
+  m_GameObject: {fileID: 1410363278}
+  m_Mass: 1.5
+  m_LinearDrag: 1
+  m_AngularDrag: 0
+  m_GravityScale: 1.29999995
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!95 &1410363281
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9563678, guid: b78f4bdba18684264aab99d3d8f490a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 182154499}
+  m_GameObject: {fileID: 1410363278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13c424a4e97384645a62fb44382aa035, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1410363282
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21263678, guid: b78f4bdba18684264aab99d3d8f490a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 182154499}
+  m_GameObject: {fileID: 1410363278}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 39b6cb443c4e043138bfff8147242192, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1410363283
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
+  m_PrefabInternal: {fileID: 182154499}
+  m_GameObject: {fileID: 1410363278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32600021, y: -4.51800013, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
 --- !u!1 &1420199875
 GameObject:
   m_ObjectHideFlags: 0
@@ -28958,7 +30073,7 @@ GameObject:
   - 4: {fileID: 1444707820}
   - 212: {fileID: 1444707819}
   - 61: {fileID: 1444707821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29062,6 +30177,50 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1460110859
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.00300002
+      objectReference: {fileID: 0}
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.65499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+  m_RootGameObject: {fileID: 1762955483}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1460170108
 GameObject:
   m_ObjectHideFlags: 0
@@ -29225,7 +30384,7 @@ GameObject:
   - 4: {fileID: 1468756133}
   - 212: {fileID: 1468756132}
   - 61: {fileID: 1468756134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29339,7 +30498,7 @@ GameObject:
   - 4: {fileID: 1470891945}
   - 212: {fileID: 1470891944}
   - 61: {fileID: 1470891946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29596,6 +30755,153 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1480256528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 177984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1480256536}
+  - 212: {fileID: 1480256535}
+  - 95: {fileID: 1480256534}
+  - 50: {fileID: 1480256533}
+  - 58: {fileID: 1480256532}
+  - 114: {fileID: 1480256531}
+  - 114: {fileID: 1480256530}
+  - 114: {fileID: 1480256529}
+  m_Layer: 8
+  m_Name: AlienA
+  m_TagString: Deadly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1480256529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11428448, guid: 7a7ee6f12110648009890d6ab4afa96d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b441ee8c69fa14c13a5602d475c86db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sightStart: {fileID: 1867440133}
+  sightEnd: {fileID: 1778848600}
+  needsCollision: 0
+--- !u!114 &1480256530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11474930, guid: 7a7ee6f12110648009890d6ab4afa96d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b441ee8c69fa14c13a5602d475c86db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sightStart: {fileID: 1867440133}
+  sightEnd: {fileID: 685458219}
+  needsCollision: 1
+--- !u!114 &1480256531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11485864, guid: 7a7ee6f12110648009890d6ab4afa96d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa01a641c57f146309510b612ef714a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: .5
+--- !u!58 &1480256532
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5877984, guid: 7a7ee6f12110648009890d6ab4afa96d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .200000003
+  m_Center: {x: .0599999987, y: -.180000007}
+--- !u!50 &1480256533
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5077984, guid: 7a7ee6f12110648009890d6ab4afa96d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!95 &1480256534
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9577984, guid: 7a7ee6f12110648009890d6ab4afa96d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e56b145c6daaa4c198c77485610e0c24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1480256535
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21277984, guid: 7a7ee6f12110648009890d6ab4afa96d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ede52a578ccb74204bb7c77d4bbb387d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1480256536
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1480256528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .347722888, y: -4.04957676, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 685458219}
+  - {fileID: 1778848600}
+  - {fileID: 1867440133}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1 &1483307039
 GameObject:
   m_ObjectHideFlags: 0
@@ -29759,7 +31065,7 @@ GameObject:
   - 4: {fileID: 1485687613}
   - 212: {fileID: 1485687612}
   - 61: {fileID: 1485687614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29822,7 +31128,7 @@ GameObject:
   - 4: {fileID: 1485771777}
   - 212: {fileID: 1485771776}
   - 61: {fileID: 1485771778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29936,7 +31242,7 @@ GameObject:
   - 4: {fileID: 1490166394}
   - 212: {fileID: 1490166393}
   - 61: {fileID: 1490166395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29999,7 +31305,7 @@ GameObject:
   - 4: {fileID: 1491079816}
   - 212: {fileID: 1491079815}
   - 61: {fileID: 1491079817}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30062,7 +31368,7 @@ GameObject:
   - 4: {fileID: 1491373809}
   - 212: {fileID: 1491373808}
   - 61: {fileID: 1491373810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30166,6 +31472,54 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1501345614
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.77600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.95499992
+      objectReference: {fileID: 0}
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420590, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434488, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: ignoreTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+  m_RootGameObject: {fileID: 95580502}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1506487886
 GameObject:
   m_ObjectHideFlags: 0
@@ -30176,7 +31530,7 @@ GameObject:
   - 4: {fileID: 1506487888}
   - 212: {fileID: 1506487887}
   - 61: {fileID: 1506487889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30290,7 +31644,7 @@ GameObject:
   - 4: {fileID: 1513769040}
   - 212: {fileID: 1513769039}
   - 61: {fileID: 1513769041}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30506,7 +31860,7 @@ GameObject:
   - 4: {fileID: 1528139617}
   - 212: {fileID: 1528139616}
   - 61: {fileID: 1528139618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30949,7 +32303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 13
 --- !u!114 &1541776297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31074,7 +32428,7 @@ GameObject:
   - 4: {fileID: 1550332686}
   - 212: {fileID: 1550332685}
   - 61: {fileID: 1550332687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31127,6 +32481,50 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1001 &1562438227
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.74715948
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -5.08871078
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_RootGameObject: {fileID: 238581037}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1562789212
 GameObject:
   m_ObjectHideFlags: 0
@@ -31137,7 +32535,7 @@ GameObject:
   - 4: {fileID: 1562789214}
   - 212: {fileID: 1562789213}
   - 61: {fileID: 1562789215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31353,7 +32751,7 @@ GameObject:
   - 4: {fileID: 1571192684}
   - 212: {fileID: 1571192683}
   - 61: {fileID: 1571192685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31518,7 +32916,7 @@ GameObject:
   - 4: {fileID: 1580559847}
   - 212: {fileID: 1580559846}
   - 61: {fileID: 1580559848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31632,7 +33030,7 @@ GameObject:
   - 4: {fileID: 1582816078}
   - 212: {fileID: 1582816077}
   - 61: {fileID: 1582816079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31950,7 +33348,7 @@ GameObject:
   - 4: {fileID: 1596077377}
   - 212: {fileID: 1596077376}
   - 61: {fileID: 1596077378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32064,7 +33462,7 @@ GameObject:
   - 4: {fileID: 1600666290}
   - 212: {fileID: 1600666289}
   - 61: {fileID: 1600666291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32178,7 +33576,7 @@ GameObject:
   - 4: {fileID: 1601820352}
   - 212: {fileID: 1601820351}
   - 61: {fileID: 1601820353}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32292,7 +33690,7 @@ GameObject:
   - 4: {fileID: 1604668712}
   - 212: {fileID: 1604668711}
   - 61: {fileID: 1604668713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32406,7 +33804,7 @@ GameObject:
   - 4: {fileID: 1615866108}
   - 212: {fileID: 1615866107}
   - 61: {fileID: 1615866109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32459,6 +33857,62 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: .5, y: -.5}
+--- !u!1001 &1619038594
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: doorTriggers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.69799995
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -5.42199993
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: sticky
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: doorTriggers.Array.data[0]
+      value: 
+      objectReference: {fileID: 945237381}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+  m_RootGameObject: {fileID: 1633345662}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1619320379
 GameObject:
   m_ObjectHideFlags: 0
@@ -32469,7 +33923,7 @@ GameObject:
   - 4: {fileID: 1619320381}
   - 212: {fileID: 1619320380}
   - 61: {fileID: 1619320382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32685,7 +34139,7 @@ GameObject:
   - 4: {fileID: 1626848918}
   - 212: {fileID: 1626848917}
   - 61: {fileID: 1626848919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32891,6 +34345,103 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1633345662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+  m_PrefabInternal: {fileID: 1619038594}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1633345667}
+  - 212: {fileID: 1633345666}
+  - 95: {fileID: 1633345665}
+  - 61: {fileID: 1633345664}
+  - 114: {fileID: 1633345663}
+  m_Layer: 0
+  m_Name: Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1633345663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33,
+    type: 2}
+  m_PrefabInternal: {fileID: 1619038594}
+  m_GameObject: {fileID: 1633345662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43f05d955aa740d19de5c92b9c05b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sticky: 0
+  doorTriggers:
+  - {fileID: 945237381}
+--- !u!61 &1633345664
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6114922, guid: 6cebd2282e5f94f169b4295311216f33,
+    type: 2}
+  m_PrefabInternal: {fileID: 1619038594}
+  m_GameObject: {fileID: 1633345662}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .5, y: .150000006}
+  m_Center: {x: 0, y: 0}
+--- !u!95 &1633345665
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9514922, guid: 6cebd2282e5f94f169b4295311216f33,
+    type: 2}
+  m_PrefabInternal: {fileID: 1619038594}
+  m_GameObject: {fileID: 1633345662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d36a7429f1592411089935740260d690, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1633345666
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21214922, guid: 6cebd2282e5f94f169b4295311216f33,
+    type: 2}
+  m_PrefabInternal: {fileID: 1619038594}
+  m_GameObject: {fileID: 1633345662}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 16918986d421340348d866702b264377, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1633345667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+  m_PrefabInternal: {fileID: 1619038594}
+  m_GameObject: {fileID: 1633345662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.69799995, y: -5.42199993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
 --- !u!1 &1641829964
 GameObject:
   m_ObjectHideFlags: 0
@@ -32901,7 +34452,7 @@ GameObject:
   - 4: {fileID: 1641829966}
   - 212: {fileID: 1641829965}
   - 61: {fileID: 1641829967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33015,7 +34566,7 @@ GameObject:
   - 4: {fileID: 1642623492}
   - 212: {fileID: 1642623491}
   - 61: {fileID: 1642623493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33180,7 +34731,7 @@ GameObject:
   - 4: {fileID: 1650732038}
   - 212: {fileID: 1650732037}
   - 61: {fileID: 1650732039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33243,7 +34794,7 @@ GameObject:
   - 4: {fileID: 1655438830}
   - 212: {fileID: 1655438829}
   - 61: {fileID: 1655438831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33510,7 +35061,7 @@ GameObject:
   - 4: {fileID: 1676080741}
   - 212: {fileID: 1676080740}
   - 61: {fileID: 1676080742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33614,6 +35165,50 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1682066010
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.97018051
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.09996796
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_RootGameObject: {fileID: 1699887489}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1687073791
 GameObject:
   m_ObjectHideFlags: 0
@@ -33675,7 +35270,7 @@ GameObject:
   - 4: {fileID: 1693078548}
   - 212: {fileID: 1693078547}
   - 61: {fileID: 1693078549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33738,7 +35333,7 @@ GameObject:
   - 4: {fileID: 1693791793}
   - 212: {fileID: 1693791792}
   - 61: {fileID: 1693791794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33842,6 +35437,99 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1699887489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 199302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_PrefabInternal: {fileID: 1682066010}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1699887494}
+  - 212: {fileID: 1699887493}
+  - 61: {fileID: 1699887492}
+  - 114: {fileID: 1699887491}
+  - 114: {fileID: 1699887490}
+  m_Layer: 0
+  m_Name: Crystal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1699887490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400604, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1682066010}
+  m_GameObject: {fileID: 1699887489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f0be9a18f3948e58704f1181807444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  resourceName: crystal-sprites
+  currentSpriteIndex: -1
+--- !u!114 &1699887491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1682066010}
+  m_GameObject: {fileID: 1699887489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c3c058d1b164660877dea7c5316250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1699887492
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6199302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1682066010}
+  m_GameObject: {fileID: 1699887489}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .25, y: .449999988}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &1699887493
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21299302, guid: c44b5bc77869c47cdb386547a2419f72,
+    type: 2}
+  m_PrefabInternal: {fileID: 1682066010}
+  m_GameObject: {fileID: 1699887489}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c34d2d26a57334b1798138e0db517df7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1699887494
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 499302, guid: c44b5bc77869c47cdb386547a2419f72, type: 2}
+  m_PrefabInternal: {fileID: 1682066010}
+  m_GameObject: {fileID: 1699887489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.97018051, y: -4.09996796, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &1702971980
 GameObject:
   m_ObjectHideFlags: 0
@@ -34056,7 +35744,7 @@ GameObject:
   - 4: {fileID: 1721074759}
   - 212: {fileID: 1721074758}
   - 61: {fileID: 1721074760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34119,7 +35807,7 @@ GameObject:
   - 4: {fileID: 1725336026}
   - 212: {fileID: 1725336025}
   - 61: {fileID: 1725336027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34233,7 +35921,7 @@ GameObject:
   - 4: {fileID: 1727821495}
   - 212: {fileID: 1727821494}
   - 61: {fileID: 1727821496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34296,7 +35984,7 @@ GameObject:
   - 4: {fileID: 1733351691}
   - 212: {fileID: 1733351690}
   - 61: {fileID: 1733351692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34359,7 +36047,7 @@ GameObject:
   - 4: {fileID: 1737100860}
   - 212: {fileID: 1737100859}
   - 61: {fileID: 1737100861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34718,6 +36406,100 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1762955483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 113374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+  m_PrefabInternal: {fileID: 1460110859}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1762955488}
+  - 212: {fileID: 1762955487}
+  - 95: {fileID: 1762955486}
+  - 61: {fileID: 1762955485}
+  - 114: {fileID: 1762955484}
+  m_Layer: 0
+  m_Name: AlienB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1762955484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11415114, guid: a133bd24fea1c4739a31d0c548b862b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1460110859}
+  m_GameObject: {fileID: 1762955483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c8830fbad374417b13e662ae3e1615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1762955485
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6113374, guid: a133bd24fea1c4739a31d0c548b862b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1460110859}
+  m_GameObject: {fileID: 1762955483}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .699999988, y: .99000001}
+  m_Center: {x: 0, y: -.289999992}
+--- !u!95 &1762955486
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9513374, guid: a133bd24fea1c4739a31d0c548b862b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1460110859}
+  m_GameObject: {fileID: 1762955483}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 716014c9211594d8f8eeee57b8547b5e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1762955487
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21213374, guid: a133bd24fea1c4739a31d0c548b862b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1460110859}
+  m_GameObject: {fileID: 1762955483}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 482341569de914abd84e44059f1071f6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1762955488
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 413374, guid: a133bd24fea1c4739a31d0c548b862b0, type: 2}
+  m_PrefabInternal: {fileID: 1460110859}
+  m_GameObject: {fileID: 1762955483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.00300002, y: -3.65499997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &1763545865
 GameObject:
   m_ObjectHideFlags: 0
@@ -35176,7 +36958,7 @@ Transform:
   - {fileID: 1241788641}
   - {fileID: 1361934410}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 14
 --- !u!1 &1765468584
 GameObject:
   m_ObjectHideFlags: 0
@@ -35330,6 +37112,33 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1778848599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 128634, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1778848600}
+  m_Layer: 0
+  m_Name: AvoidGap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1778848600
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 428634, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1778848599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .550000012, y: -.439999998, z: .0299999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1480256536}
+  m_RootOrder: 1
 --- !u!1 &1780241048
 GameObject:
   m_ObjectHideFlags: 0
@@ -35391,7 +37200,7 @@ GameObject:
   - 4: {fileID: 1782655892}
   - 212: {fileID: 1782655891}
   - 61: {fileID: 1782655893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35505,7 +37314,7 @@ GameObject:
   - 4: {fileID: 1783566905}
   - 212: {fileID: 1783566904}
   - 61: {fileID: 1783566906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35568,7 +37377,7 @@ GameObject:
   - 4: {fileID: 1786299353}
   - 212: {fileID: 1786299352}
   - 61: {fileID: 1786299354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35682,7 +37491,7 @@ GameObject:
   - 4: {fileID: 1794175063}
   - 212: {fileID: 1794175062}
   - 61: {fileID: 1794175064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35745,7 +37554,7 @@ GameObject:
   - 4: {fileID: 1810144209}
   - 212: {fileID: 1810144208}
   - 61: {fileID: 1810144210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35808,7 +37617,7 @@ GameObject:
   - 4: {fileID: 1811495906}
   - 212: {fileID: 1811495905}
   - 61: {fileID: 1811495907}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35973,7 +37782,7 @@ GameObject:
   - 4: {fileID: 1816830854}
   - 212: {fileID: 1816830853}
   - 61: {fileID: 1816830855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36087,7 +37896,7 @@ GameObject:
   - 4: {fileID: 1825722941}
   - 212: {fileID: 1825722940}
   - 61: {fileID: 1825722942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36303,7 +38112,7 @@ GameObject:
   - 4: {fileID: 1833512431}
   - 212: {fileID: 1833512430}
   - 61: {fileID: 1833512432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36366,7 +38175,7 @@ GameObject:
   - 4: {fileID: 1839730798}
   - 212: {fileID: 1839730797}
   - 61: {fileID: 1839730799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36429,7 +38238,7 @@ GameObject:
   - 4: {fileID: 1846188928}
   - 212: {fileID: 1846188927}
   - 61: {fileID: 1846188929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36543,7 +38352,7 @@ GameObject:
   - 4: {fileID: 1847775435}
   - 212: {fileID: 1847775434}
   - 61: {fileID: 1847775436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36657,7 +38466,7 @@ GameObject:
   - 4: {fileID: 1850685793}
   - 212: {fileID: 1850685792}
   - 61: {fileID: 1850685794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36720,7 +38529,7 @@ GameObject:
   - 4: {fileID: 1851930625}
   - 212: {fileID: 1851930624}
   - 61: {fileID: 1851930626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37130,6 +38939,33 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300014, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1867440132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 163830, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1867440133}
+  m_Layer: 0
+  m_Name: SightStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1867440133
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 463830, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_PrefabInternal: {fileID: 2109440512}
+  m_GameObject: {fileID: 1867440132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .319999993, y: -.0199999996, z: .0299999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1480256536}
+  m_RootOrder: 2
 --- !u!1 &1870045970
 GameObject:
   m_ObjectHideFlags: 0
@@ -37293,7 +39129,7 @@ GameObject:
   - 4: {fileID: 1881663088}
   - 212: {fileID: 1881663087}
   - 61: {fileID: 1881663089}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37407,7 +39243,7 @@ GameObject:
   - 4: {fileID: 1891239786}
   - 212: {fileID: 1891239785}
   - 61: {fileID: 1891239787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37776,7 +39612,7 @@ GameObject:
   - 4: {fileID: 1917067810}
   - 212: {fileID: 1917067809}
   - 61: {fileID: 1917067811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37839,7 +39675,7 @@ GameObject:
   - 4: {fileID: 1918565295}
   - 212: {fileID: 1918565294}
   - 61: {fileID: 1918565296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38004,7 +39840,7 @@ GameObject:
   - 4: {fileID: 1927718380}
   - 212: {fileID: 1927718379}
   - 61: {fileID: 1927718381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38220,7 +40056,7 @@ GameObject:
   - 4: {fileID: 1948510780}
   - 212: {fileID: 1948510779}
   - 61: {fileID: 1948510781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38283,7 +40119,7 @@ GameObject:
   - 4: {fileID: 1949459562}
   - 212: {fileID: 1949459561}
   - 61: {fileID: 1949459563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38346,7 +40182,7 @@ GameObject:
   - 4: {fileID: 1953417921}
   - 212: {fileID: 1953417920}
   - 61: {fileID: 1953417922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38460,7 +40296,7 @@ GameObject:
   - 4: {fileID: 1961959106}
   - 212: {fileID: 1961959105}
   - 61: {fileID: 1961959107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38778,7 +40614,7 @@ GameObject:
   - 4: {fileID: 1977797386}
   - 212: {fileID: 1977797385}
   - 61: {fileID: 1977797387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38892,7 +40728,7 @@ GameObject:
   - 4: {fileID: 1980680483}
   - 212: {fileID: 1980680482}
   - 61: {fileID: 1980680484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39047,6 +40883,50 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1988994409
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.760842085
+      objectReference: {fileID: 0}
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.4422462
+      objectReference: {fileID: 0}
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 449582, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f37a39a48251b4cb8823c5173edb992d, type: 2}
+  m_RootGameObject: {fileID: 463752384}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1989886143
 GameObject:
   m_ObjectHideFlags: 0
@@ -39159,7 +41039,7 @@ GameObject:
   - 4: {fileID: 1994448862}
   - 212: {fileID: 1994448861}
   - 61: {fileID: 1994448863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39324,7 +41204,7 @@ GameObject:
   - 4: {fileID: 2003578691}
   - 212: {fileID: 2003578690}
   - 61: {fileID: 2003578692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39387,7 +41267,7 @@ GameObject:
   - 4: {fileID: 2004887736}
   - 212: {fileID: 2004887735}
   - 61: {fileID: 2004887737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40062,7 +41942,7 @@ GameObject:
   - 4: {fileID: 2035288182}
   - 212: {fileID: 2035288181}
   - 61: {fileID: 2035288183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40278,7 +42158,7 @@ GameObject:
   - 4: {fileID: 2046177519}
   - 212: {fileID: 2046177518}
   - 61: {fileID: 2046177520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40341,7 +42221,7 @@ GameObject:
   - 4: {fileID: 2049957570}
   - 212: {fileID: 2049957569}
   - 61: {fileID: 2049957571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40403,11 +42283,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.79325199
+      value: -7.80000019
       objectReference: {fileID: 0}
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.03732347
+      value: 5.92999983
       objectReference: {fileID: 0}
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -40431,7 +42311,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
@@ -40448,7 +42328,7 @@ GameObject:
   - 4: {fileID: 2053122991}
   - 212: {fileID: 2053122990}
   - 61: {fileID: 2053122992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40919,7 +42799,7 @@ GameObject:
   - 4: {fileID: 2080731336}
   - 212: {fileID: 2080731335}
   - 61: {fileID: 2080731337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41135,7 +43015,7 @@ GameObject:
   - 4: {fileID: 2091034253}
   - 212: {fileID: 2091034252}
   - 61: {fileID: 2091034254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41249,7 +43129,7 @@ GameObject:
   - 4: {fileID: 2093357771}
   - 212: {fileID: 2093357770}
   - 61: {fileID: 2093357772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41363,7 +43243,7 @@ GameObject:
   - 4: {fileID: 2098411824}
   - 212: {fileID: 2098411823}
   - 61: {fileID: 2098411825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41579,7 +43459,7 @@ GameObject:
   - 4: {fileID: 2104835055}
   - 212: {fileID: 2104835054}
   - 61: {fileID: 2104835056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41683,6 +43563,50 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &2109440512
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .347722888
+      objectReference: {fileID: 0}
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.04957676
+      objectReference: {fileID: 0}
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 477984, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7a7ee6f12110648009890d6ab4afa96d, type: 2}
+  m_RootGameObject: {fileID: 1480256528}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2110153919
 GameObject:
   m_ObjectHideFlags: 0
@@ -41744,7 +43668,7 @@ GameObject:
   - 4: {fileID: 2115211710}
   - 212: {fileID: 2115211709}
   - 61: {fileID: 2115211711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41807,7 +43731,7 @@ GameObject:
   - 4: {fileID: 2117577825}
   - 212: {fileID: 2117577824}
   - 61: {fileID: 2117577826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41870,7 +43794,7 @@ GameObject:
   - 4: {fileID: 2118337711}
   - 212: {fileID: 2118337710}
   - 61: {fileID: 2118337712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41933,7 +43857,7 @@ GameObject:
   - 4: {fileID: 2118737517}
   - 212: {fileID: 2118737516}
   - 61: {fileID: 2118737518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42200,7 +44124,7 @@ GameObject:
   - 4: {fileID: 2127317517}
   - 212: {fileID: 2127317516}
   - 61: {fileID: 2127317518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42416,7 +44340,7 @@ GameObject:
   - 4: {fileID: 2132973994}
   - 212: {fileID: 2132973993}
   - 61: {fileID: 2132973995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42479,7 +44403,7 @@ GameObject:
   - 4: {fileID: 2137923485}
   - 212: {fileID: 2137923484}
   - 61: {fileID: 2137923486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cave-sprites_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
