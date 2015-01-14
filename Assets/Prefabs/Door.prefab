@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 11440696}
-  ignoreTrigger: 1
+  ignoreTrigger: 0
 --- !u!114 &11440696
 MonoBehaviour:
   m_ObjectHideFlags: 1
