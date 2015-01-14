@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: switch-sprites_0
+  m_Name: SwitchController
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: AnimationState
@@ -147,10 +147,6 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110294384}
-      second:
-      - {fileID: 110153196}
-    data:
       first: {fileID: 110250652}
       second:
       - {fileID: 110160058}
@@ -158,6 +154,10 @@ StateMachine:
       first: {fileID: 110217604}
       second:
       - {fileID: 110170372}
+    data:
+      first: {fileID: 110294384}
+      second:
+      - {fileID: 110153196}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
