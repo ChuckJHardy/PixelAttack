@@ -185,7 +185,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 958c5753c8b264f799d1921e62bf9c76, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -220,7 +220,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 11433578, guid: d033677cb977644deb811df8a65be3e7, type: 2}
+  attackSound: {fileID: 8300000, guid: e5a2596b8072644599c33146c302ca1a, type: 3}
   attackDelay: 3
+--- !u!1 &429133197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 144054, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
+  m_PrefabInternal: {fileID: 1750129963}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 429133199}
+  - 108: {fileID: 429133198}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &429133198
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10844054, guid: 04de701412f6742c19ebd193cac69c95,
+    type: 2}
+  m_PrefabInternal: {fileID: 1750129963}
+  m_GameObject: {fileID: 429133197}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3
+  m_Range: 4
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &429133199
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 444054, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
+  m_PrefabInternal: {fileID: 1750129963}
+  m_GameObject: {fileID: 429133197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -.200000003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1104399086}
+  m_RootOrder: 0
 --- !u!1001 &778963332
 Prefab:
   m_ObjectHideFlags: 0
@@ -342,6 +407,10 @@ MonoBehaviour:
   jetSpeed: 15
   maxVelocity: {x: 3, y: 5}
   airSpeedMultiplier: .300000012
+  leftFootSound: {fileID: 8300000, guid: b44873b9d4e0f49be950bbc3b7b72c81, type: 3}
+  rightFootSound: {fileID: 8300000, guid: 5f5aa25730b274521998d02d4ad18a75, type: 3}
+  thudSound: {fileID: 8300000, guid: df02cac684dd24430a0ab37e9f3b7bc3, type: 3}
+  rocketSound: {fileID: 8300000, guid: 638ad38f2715848ed8790668cac91562, type: 3}
 --- !u!50 &1104399083
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -406,7 +475,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .417182207, y: .4081707, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 429133199}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &1259735559
