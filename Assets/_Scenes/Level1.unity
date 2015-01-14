@@ -34251,6 +34251,7 @@ GameObject:
   - 124: {fileID: 1541776293}
   - 81: {fileID: 1541776292}
   - 114: {fileID: 1541776297}
+  - 167: {fileID: 1541776298}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -34335,6 +34336,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 445152680}
+--- !u!167 &1541776298
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541776291}
+  m_Enabled: 1
+  m_MinDistance: 5
+  m_MaxDistance: 10
+  m_ReverbPreset: 9
+  m_Room: -1000
+  m_RoomHF: 0
+  m_DecayTime: 2.91000009
+  m_DecayHFRatio: 1.29999995
+  m_Reflections: -602
+  m_ReflectionsDelay: .0149999997
+  m_Reverb: -302
+  m_ReverbDelay: .0219999999
+  m_HFReference: 5000
+  m_RoomRolloffFactor: 0
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1 &1542374007
 GameObject:
   m_ObjectHideFlags: 0
