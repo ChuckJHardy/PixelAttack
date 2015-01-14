@@ -9,6 +9,10 @@ public class Explode : MonoBehaviour {
 		if (other.gameObject.tag == "Deadly") OnExplode();
 	}
 
+	void OnCollisionEnter2D (Collision2D other) {
+		if (other.gameObject.tag == "Deadly") OnExplode();
+	}
+
 	void OnExplode () {
 		Destroy (gameObject);
 

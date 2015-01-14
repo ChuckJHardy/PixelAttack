@@ -685,6 +685,7 @@ GameObject:
   - 114: {fileID: 1218334647}
   - 114: {fileID: 1218334646}
   - 58: {fileID: 1218334645}
+  - 114: {fileID: 1218334652}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -800,6 +801,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1218334652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495514, guid: 04de701412f6742c19ebd193cac69c95,
+    type: 2}
+  m_PrefabInternal: {fileID: 2050777923}
+  m_GameObject: {fileID: 1218334644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97968aa4bf9e4da888b4b2fc21fcd24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyPart: {fileID: 11480158, guid: 1254f87ae1ed843059255547bdb9b6f4, type: 2}
+  totalBodyParts: 5
 --- !u!1 &1358113918
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +825,7 @@ GameObject:
   - 4: {fileID: 1358113921}
   - 212: {fileID: 1358113920}
   - 61: {fileID: 1358113919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TestPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}

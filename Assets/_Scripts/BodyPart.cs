@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class BodyPart : MonoBehaviour {
@@ -13,7 +13,7 @@ public class BodyPart : MonoBehaviour {
 		start = spriteRenderer.color;
 		end = new Color (start.r, start.g, start.b, 0.0f);
 	}
-	
+
 	void Update () {
 		time += Time.deltaTime;
 		
