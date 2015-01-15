@@ -13280,11 +13280,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.80000019
+      value: -6.78999996
       objectReference: {fileID: 0}
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.42999983
+      value: -1.65999997
       objectReference: {fileID: 0}
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14693,7 +14693,7 @@ Transform:
   m_PrefabInternal: {fileID: 380863283}
   m_GameObject: {fileID: 445152680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.80000019, y: 5.42999983, z: 0}
+  m_LocalPosition: {x: -6.78999996, y: -1.65999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 902517468}
@@ -17095,7 +17095,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.88999987
+      value: -4.3579998
       objectReference: {fileID: 0}
     - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -24021,7 +24021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 95580503}
-  ignoreTrigger: 0
+  ignoreTrigger: 1
 --- !u!4 &945237382
 Transform:
   m_ObjectHideFlags: 0
@@ -28395,6 +28395,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11434488, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
+      propertyPath: ignoreTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f35aba5f1c054088a444735abc5a527, type: 2}
   m_RootGameObject: {fileID: 95580502}
@@ -32168,7 +32172,7 @@ Transform:
   m_PrefabInternal: {fileID: 568627937}
   m_GameObject: {fileID: 1410363278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.32600021, y: -4.88999987, z: 0}
+  m_LocalPosition: {x: -7.32600021, y: -4.3579998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -36627,7 +36631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sticky: 0
-  doorTriggers: []
+  doorTriggers:
+  - {fileID: 945237381}
   triggerSound: {fileID: 8300000, guid: 263149764a3b64dc5850f8cbdc2917d8, type: 3}
 --- !u!61 &1633345664
 BoxCollider2D:
@@ -36687,7 +36692,7 @@ Transform:
   m_PrefabInternal: {fileID: 2105542120}
   m_GameObject: {fileID: 1633345662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.69799995, y: -5.44500017, z: 0}
+  m_LocalPosition: {x: -8.69799995, y: -5.45100021, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45772,13 +45777,17 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11464472, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: doorTriggers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
       propertyPath: m_LocalPosition.x
       value: -8.69799995
       objectReference: {fileID: 0}
     - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.44500017
+      value: -5.45100021
       objectReference: {fileID: 0}
     - target: {fileID: 414922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
       propertyPath: m_LocalPosition.z
@@ -45808,6 +45817,14 @@ Prefab:
       propertyPath: doorTriggers.Array.data[0]
       value: 
       objectReference: {fileID: 945237381}
+    - target: {fileID: 6114922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6114922, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
+      propertyPath: m_Size.x
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cebd2282e5f94f169b4295311216f33, type: 2}
   m_RootGameObject: {fileID: 1633345662}
