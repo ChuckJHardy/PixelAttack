@@ -25,5 +25,10 @@ public class Explode : MonoBehaviour {
 			clone.rigidbody2D.AddForce (Vector2.right * Random.Range(-50, 50));
 			clone.rigidbody2D.AddForce (Vector2.up * Random.Range(100, 400));
 		}
+
+		GameObject go = new GameObject("ClickToContinue");
+		ClickToContinue script = go.AddComponent<ClickToContinue>();
+		script.sceneName = Application.loadedLevelName;
+		go.AddComponent<DisplayRestartText>();
 	}
 }
