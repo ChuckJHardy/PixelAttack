@@ -13280,11 +13280,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.78999996
+      value: -7.76999998
       objectReference: {fileID: 0}
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.65999997
+      value: 5.26000023
       objectReference: {fileID: 0}
     - target: {fileID: 487452, guid: 04de701412f6742c19ebd193cac69c95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14693,7 +14693,7 @@ Transform:
   m_PrefabInternal: {fileID: 380863283}
   m_GameObject: {fileID: 445152680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.78999996, y: -1.65999997, z: 0}
+  m_LocalPosition: {x: -7.76999998, y: 5.26000023, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 902517468}
@@ -17091,11 +17091,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.32600021
+      value: -7.86000013
       objectReference: {fileID: 0}
     - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.3579998
+      value: -4.42999983
       objectReference: {fileID: 0}
     - target: {fileID: 463678, guid: b78f4bdba18684264aab99d3d8f490a3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -32172,7 +32172,7 @@ Transform:
   m_PrefabInternal: {fileID: 568627937}
   m_GameObject: {fileID: 1410363278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.32600021, y: -4.3579998, z: 0}
+  m_LocalPosition: {x: -7.86000013, y: -4.42999983, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35578,8 +35578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f9c38964db4489692b8f845932ca3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  air: 10
-  maxAir: 10
+  air: 20
+  maxAir: 20
   airBurnRate: 1
   bgTexture: {fileID: 2800000, guid: 8aa7a6d156e3543908f9ee710acb7713, type: 3}
   airBarTexture: {fileID: 2800000, guid: 2daeca6656b234cf689b76c2a8e03bb1, type: 3}
