@@ -35547,6 +35547,52 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300012, guid: 26621385309de4b4c876e2a2b37b0f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1590450595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1590450597}
+  - 114: {fileID: 1590450596}
+  m_Layer: 0
+  m_Name: Meter
+  m_TagString: Untagged
+  m_Icon: {fileID: -1376725286, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1590450596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590450595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f9c38964db4489692b8f845932ca3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  air: 10
+  maxAir: 10
+  airBurnRate: 1
+  bgTexture: {fileID: 2800000, guid: 8aa7a6d156e3543908f9ee710acb7713, type: 3}
+  airBarTexture: {fileID: 2800000, guid: 2daeca6656b234cf689b76c2a8e03bb1, type: 3}
+  iconWidth: 32
+  airOffset: {x: 10, y: 10}
+--- !u!4 &1590450597
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590450595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.7399998, y: 6.94000006, z: -.270000011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
 --- !u!1 &1591968071
 GameObject:
   m_ObjectHideFlags: 0
